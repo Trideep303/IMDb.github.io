@@ -1,0 +1,388 @@
+/*
+    Google Fonts 
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Castoro', serif;
+    font-family: 'Noto Sans', sans-serif;
+ */
+
+ /* ALL STYLE */
+ body
+ {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     background-color: #000000;
+     color: white;
+     
+ }
+ 
+ [class*="col-"]
+{
+    /* float: left;
+    padding: 10px; */
+    width: 100%;
+}
+/* ALL STYLE ENDS */
+
+/* header starts here */
+nav
+{
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+}
+.nav-title a img
+{
+    height: 40px;
+    width: 80px;
+    border: 3px yellow;
+    border-radius: 10px;
+}
+.nav-icon
+{
+    margin-top: 10px;
+    text-align: left;
+}
+nav div
+{
+    margin: 10px;
+}
+.search input
+{
+    padding: 5px;
+    border: none;
+    
+    border-radius: 10px;
+}
+.sign
+{
+    margin-top: 0.5px;
+}
+/* header ends here */
+
+/* banner design starts here */
+.banner
+{
+    text-align: center;
+    
+}
+.banner img
+{
+    cursor: pointer;
+    margin-top: 120px;
+}
+.banner::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* banner design ends here */
+
+
+/* up next design starts here */
+.upnext
+{
+    margin: 10px auto;
+    text-align: center;
+    width: 1200px;
+    display: flex;
+}
+.big-image
+{
+    margin-right: 20px;
+}
+.next-card img
+{
+    width: 100px;
+    height: 130px;
+}
+.next-card
+{
+    
+    padding: 20px;
+}
+.next-card h2
+{
+    color: #E2B616;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: left;
+}
+.one
+{
+    display: flex;
+    background-color: #0B0B0B;
+    padding: 20px;
+}
+.one img
+{
+    margin-right: 10px;
+}
+.play-btn
+{
+    position: relative;
+}
+.play-btn i
+{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    border: 2px white solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+.play-btn i:hover
+{
+    color: #E2B616;
+    border-color: #E2B616;
+    cursor: pointer;
+}
+.trailers
+{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+    font-family: 'Castoro', serif;
+}
+.trailers p:hover
+{
+    color: #E2B616;
+    cursor: pointer;
+}
+.upnext::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* up next design ends here */
+
+/* featured design starts here */
+.featured
+{
+    margin: 10px auto;
+    
+    width: 1200px;
+}
+.featured h2
+{
+    color: #E2B616;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.featured .featured-img img
+{
+    margin-right: 30px;
+}
+.featured .featured-img
+{
+    display: flex;
+    color: white;
+    font-size: 16px;
+}
+.featured .featured-img p:hover
+{
+    color: gray;
+    cursor: pointer;
+}
+.featured::after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* featured design ends here */
+
+
+/* watch section design starts here */
+.watch
+{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+.watch h2
+{
+    color: #E2B616;
+    font-size: 30px;
+    margin-right: 255px;
+}
+.watch button
+{
+    height: 35px;
+    width: 500px;
+    background-color: #E2B616;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.watch::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* watch section design ends here */
+
+/* Threaters section starts here */
+.threaters
+{
+    margin: 10px auto;
+    display: flex;
+    width: 1200px;
+}
+.th-card
+{
+    text-align: center;
+    background-color: #1A1A1A;
+    height: 420px;
+    padding: 10px;
+    margin-right: 20px;
+   transition: 0.6s;
+   width: 200px;
+}
+.th-card:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.show
+{
+    color: #64A1F0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.th-card .sh
+{
+    color: #64A1F0;
+}
+.threaters::after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* threaters section ends here */
+
+/* actors section starts here */
+.actors
+{
+    margin: 10px auto;
+    
+    width: 1200px;
+}
+.rd-img 
+{
+    display: flex;
+    text-align: center;
+}
+.born h2
+{
+    color: white;
+    font-size: 30px;
+}
+.born h4
+{
+    color: gray;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.born h4:hover
+{
+    color: white;
+    transform: scale(1);
+}
+.rd-img img
+{
+    border-radius: 50%;
+    margin-right: 40px;
+    
+}
+.rd-img .ac1
+{
+    cursor: pointer;
+}
+/* actors section ends here */
+
+/* recently viewed section' design starts here */
+.view
+{
+    margin: 10px auto;
+    
+    width: 1200px;
+}
+.view h4
+{
+    color: gray;
+}
+/* recently vieweed section' design ends here */
+
+/* footer design starts here */
+footer
+{
+    margin: 100px auto;
+    text-align: center;
+    width: 1200px;
+
+}
+.footer-icons
+{
+    margin: 30px;
+}
+.footer-icons i
+{
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    border: solid black;
+    transition: 0.5s;
+}
+.footer-icons i:hover
+{
+    background-color: #1E1E1E;
+    cursor: pointer;
+}
+.footer-icons .fb:hover
+{
+    color:  #3b5998;
+}
+
+.footer-icons .ins:hover
+{
+    color: rgb(188, 42, 141);
+}
+.footer-icons .tw:hover
+{
+    color:  #00acee;
+}
+.footer-icons .yo:hover
+{
+    color: rgb(255, 0, 0);
+}
+
+.footer-links span
+{
+    padding: 20px;
+    font-size: 20px;
+    transition: 0.9s;
+}
+.footer-links span:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.amazon
+{
+    margin-top: 80px;
+    font-size: 20px;
+}
+/* footer dsign ends here */
